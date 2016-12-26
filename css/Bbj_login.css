@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-
+/*----------------------------------------------------- 로그인페이지 -----------------------------------------------------*/
+/* layout */
 #wrap_login{position:relative; width:100%; height:100%; text-align:center;}
 #wrap_login .header_lg{postion:relative; width:100%; height:214px; 
 background: rgb(1,168,213); /* Old browsers */
@@ -9,15 +10,21 @@ background: -webkit-linear-gradient(top, rgba(1,168,213,1) 38%,rgba(2,148,201,1)
 background: linear-gradient(to bottom, rgba(1,168,213,1) 38%,rgba(2,148,201,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', endColorstr='#0294c9',GradientType=0 ); /* IE6-9 */}
 #wrap_login .content_lg{position:relative; width:82%; height:auto; margin:20px auto 0 auto;}
+/* layout */
 
+/* back btn(login용)*/
 .back_lg{position:absolute; display:block; width:40px; height:40px; top:5px; left:5px; padding:0; border:0; -webkit-appearance:none; background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px; text-indent:-9999px;}
 .back_lg a{display:block; width:40px; height:40px;}
 .back_lg a:active{background:rgba(0,0,0,0.05);}
 .back_lg a_active{background:rgba(0,0,0,0.05);}
+/* back btn(login용)*/
 
+/* header img */
 .header_lg img.logo_lg{position:relative; top:72px;}
 .header_lg img.img_lg{position:absolute; top:156px; right:7px;}
+/* header img */
 
+/* login form */
 .content_lg .form_1{position:relative; width:100%; height:auto; margin-bottom:6px; box-sizing:border-box; text-align:left;}
 .content_lg .form_1 .line{width:100%; height:1px; background:#d8deea;}
 .content_lg .form_1 label.form_tit{padding:16.5px 14px 16.5px 10px; font-size:14px; color:#cad0dc;}
@@ -36,7 +43,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .content_lg .lg_btn a:active{position:relative; top:1px;}
 .content_lg .lg_btn a_active{position:relative; top:1px;}
 
-
 .content_lg .lg_menu{position:relative; font-size:14px; line-height:18px; color:#888888;}
 .content_lg .lg_menu a{display:inline-block;}
 .content_lg .lg_menu a:active{position:relative; background:rgba(0,0,0,0.05);}
@@ -51,57 +57,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .content_lg .lg_social .ko_lg{float:right;}
 .content_lg .lg_social .ko_lg:active{position:relative; top:1px;}
 .content_lg .lg_social .ko_lg:active{position:relative; top:1px;}
+/* login form */
 
 @media(min-width:360px){
 #wrap_login .header_lg{height:220px;} 
-
 .header_lg img.logo_lg{top:74px;}
 .header_lg img.img_lg{top:162px;}
-
-.content_lg .form_1{margin-bottom:8px;}	
-	
+.content_lg .form_1{margin-bottom:8px;}		
 #wrap_login .content_lg{margin:34px auto 0 auto;}
-
 .content_lg .lg_social{width:94px; margin:50px auto  0 auto;}
-
 .content_lg .lg_btn{margin:28px auto 30px auto;}
-
 }
 
 @media(min-width:414px){
 #wrap_login .header_lg{height:270px;} 
-
 .header_lg img.logo_lg{top:104px;}
 .header_lg img.img_lg{top:212px;}
-
-.content_lg .form_1{margin-bottom:12px;}	
-	
+.content_lg .form_1{margin-bottom:12px;}		
 #wrap_login .content_lg{margin:50px auto 0 auto;}
-
 .content_lg .lg_social{width:94px; margin:60px auto 0 auto;}
-
 .content_lg .lg_btn{width:190px; margin:36px auto 36px auto;}
 .content_lg .lg_btn a{padding:16px 0; border-radius:24.5px;}
-
 .content_lg .lg_menu{font-size:15px;}
-
 }
 
 @media(min-width:768px){
 #wrap_login .header_lg{height:360px;} 
-
 .header_lg img.logo_lg{top:146px;}
 .header_lg img.img_lg{top:302px;}
-
-.content_lg .form_1{width:460px; margin:0 auto 20px auto;}	
-	
+.content_lg .form_1{width:460px; margin:0 auto 20px auto;}		
 #wrap_login .content_lg{margin:80px auto 0 auto;}
-
 .content_lg .lg_social{width:110px; margin:110px auto 0 auto;}
-
 .content_lg .lg_btn{width:250px; margin:46px auto 50px auto;}
 .content_lg .lg_btn a{padding:20px 0; border-radius:28.5px;}
-
 .content_lg .lg_menu{font-size:17px;}
-
 }
+/*----------------------------------------------------- 로그인페이지 -----------------------------------------------------*/
