@@ -13,8 +13,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 /* layout */
 
 /* back btn(login용)*/
-.back_lg{position:absolute; display:block; width:40px; height:40px; top:5px; left:5px; padding:0; border:0; -webkit-appearance:none; background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px; text-indent:-9999px;}
+.back_lg{position:absolute; display:block; width:40px; height:40px; top:5px; left:5px; padding:0; border:0; -webkit-appearance:none; text-indent:-9999px;}
 .back_lg a{display:block; width:40px; height:40px;}
+.back_lg a.back_1{background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_2{background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg2.png') center center no-repeat; background-size:17px 14px;}
 .back_lg a:active{background:rgba(0,0,0,0.05);}
 .back_lg a_active{background:rgba(0,0,0,0.05);}
 /* back btn(login용)*/
