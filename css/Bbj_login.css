@@ -119,12 +119,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 .input_info .slct_sex{float:right; width:53%; padding:10px 0;}
 .input_info .slct_sex .sex_male{float:left; text-align:center;}
-.input_info .slct_sex .sex_male a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; border-radius:15px; background:#5188ff;}
+.input_info .slct_sex .sex_male a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; letter-spacing:1px; border-radius:15px; background:#5188ff;}
 .input_info .slct_sex .sex_female{float:right; text-align:center;}
-.input_info .slct_sex .sex_female a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; border-radius:15px; background:#ff5390;}
+.input_info .slct_sex .sex_female a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; letter-spacing:1px; border-radius:15px; background:#ff5390;}
 
 @media(min-width:360px){
 .input_info .slct_sex .sex_male a{width:58px;}
 .input_info .slct_sex .sex_female a{width:58px;}
+}
+
+@media(min-width:375px){
+.input_info .slct_sex{width:50%;}
 }
 /*----------------------------------------------------- 회원가입페이지 -----------------------------------------------------*/
