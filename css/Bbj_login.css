@@ -42,7 +42,7 @@
 
 /*----------------------------------------------------- 로그인페이지 -----------------------------------------------------*/
 /* layout */
-#wrap_login{position:relative; width:100%; height:100%; text-align:center;}
+#wrap_login{position:relative; width:100%; text-align:center;}
 #wrap_login .header_lg{postion:relative; width:100%; height:214px; 
 background: rgb(1,168,213); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(1,168,213,1) 38%, rgba(2,148,201,1) 100%); /* FF3.6-15 */
@@ -166,8 +166,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .box_agree .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
 .box_agree .btn_look:active{color:#0ca2ed;}
 
-.btn_jn{position:absolute; top:calc(100% - 50px); width:100%; background:#0ca2ed;}
-.btn_jn a{padding:17px 0; font-size:16px; color:#fff; line-height:16px;}
+.btn_jn{position:absolute; bottom:0; width:100%;}
+.btn_jn a{padding:17px 0; font-size:16px; color:#fff; line-height:16px ;background:#0ca2ed;}
+.btn_jn a:active{background:#0b91d4;}
+.btn_jn a_active{background:#0b91d4;}
 
 @media(min-width:360px){
 #wrap_join .bbj_logo{position:relative; top:56px;}
