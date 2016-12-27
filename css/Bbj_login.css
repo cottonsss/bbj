@@ -20,13 +20,14 @@
 .form_1 .line{width:100%; height:1px; background:#d8deea;} 
 .form_1 .input_info .line{position:absolute; left:0; width:100%; height:1px; background:#d8deea;} 
 .form_1 .form_tit{padding:16.5px 14px 16.5px 10px; font-size:14px; color:#cad0dc;} /* label */
-.form_1 .form_tit2{float:left; width:90px; padding:18px 0 18px 1px; font-size:14px; color:#8d96a7;} /* label */
+.form_1 .form_tit2{float:left; width:86px; padding:18px 0 18px 1px; font-size:14px; letter-spacing:-0.5px; color:#8d96a7;} /* label */
 
-.form_1 .input_info{width:calc(100% - 90px); margin-left:91px; letter-spacing:2px;}
+.form_1 .input_info{width:calc(100% - 86px); margin-left:87px; letter-spacing:2px;}
 .form_1 input{padding:16px 0 17px 0; font-size:15px; line-height:17px; color:#5f676b; border:none; outline:none;}
 .form_1 input.input_id{width:calc(90% - 50px);}
 .form_1 input.input_pw{width:calc(90% - 116px); letter-spacing:2px;}
 .form_1 input.input_100{width:100%;}
+.form_1 input.input_42{width:42%;}
 .form_1 input:focus ~ .line{background-color:#0ca2ed;
 -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 
@@ -110,9 +111,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 /* layout */
 #wrap_join{position:relative; width:100%; height:100%; text-align:center;}
 #wrap_join .tab_jn{position:relative; width:82%; height:auto; top:60px; margin:0 auto; overflow:auto;}
-#wrap_join .contents_jn{position:relative; width:82%; height:auto; top:100px; margin:0 auto;}
+#wrap_join .contents_jn{position:relative; width:86%; height:auto; top:100px; margin:0 auto;}
 /* layout */
 
 .tab_jn .tab_p{float:left; width:50%; padding:10px 0; font-size:13px; line-height:13px; color:#fff; background:#0ca2ed; border:1px solid #0ca2ed; border-radius:17.5px 0 0 17.5px; box-sizing:border-box;}
 .tab_jn .tab_a{float:right; width:50%;  padding:10px 0; font-size:13px; line-height:13px; color:#5f676b; background:#fff; border:1px solid #0ca2ed; border-radius:0 17.5px 17.5px 0; box-sizing:border-box;}
+
+.input_info .slct_sex{float:right; width:53%; padding:10px 0;}
+.input_info .slct_sex .sex_male{float:left; text-align:center;}
+.input_info .slct_sex .sex_male a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; border-radius:15px; background:#5188ff;}
+.input_info .slct_sex .sex_female{float:right; text-align:center;}
+.input_info .slct_sex .sex_female a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; border-radius:15px; background:#ff5390;}
+
+@media(min-width:360px){
+.input_info .slct_sex .sex_male a{width:58px;}
+.input_info .slct_sex .sex_female a{width:58px;}
+}
 /*----------------------------------------------------- 회원가입페이지 -----------------------------------------------------*/
