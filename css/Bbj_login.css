@@ -166,7 +166,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .box_agree .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
 .box_agree .btn_look:active{color:#04d464;}
 
-.btn_jn{position:fixed; bottom:0; width:100%; background:#0ca2ed;}
+.btn_jn{position:fixed; bottom:0; width:100%; background:red;}
 .btn_jn a{padding:17px 0; font-size:16px; color:#fff; line-height:16px;}
 
 @media(min-width:360px){
