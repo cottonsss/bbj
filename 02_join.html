@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10,user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>방부장</title>
 <link href="css/bbj_font.css" rel="stylesheet" type="text/css">
 <link href="css/bbj_default.css" rel="stylesheet" type="text/css">
-<link href="css/Bbj_login.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> 
+<link href="css/bbj_login.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/bbj_design.js"></script>
 </head>
 <body>
 
-<div id="wrap_join">
+<div id="wrap_join" class="full_page">
 	<div class="back_lg"><a href="#" class="back_2">뒤로</a></div>
     <div class="bbj_logo"><a href="#""><img src="http://image.club5678.com/imgs/bbjang/img_login/img_bbj_logo2.png" class="logo_lg" width="103" height="34" alt="로고" /></a></div>
     <!--
@@ -73,10 +75,10 @@
             <div class="num_re"><a href="#" class="btn_grd_white">재전송</a></div>
         </div>
     </div>
-    <div class="box_agree">
-        <input type="checkbox" id="chk1" class="chk">
-        <label for="chk1" class="chk_lb"><u>이용약관 및 개인정보 제공동의</u> </label><a href="#" class="btn_look">[보기]</a>
-    </div> 
+    <div class="chk_wrap">
+    	<input type="checkbox" ic="chk" class="chk_input">
+        <label class="chk_lb" for="chk"><u>이용약관 및 개인정보 제공동의</u> </label><a href="#" class="btn_look">[보기]</a>
+    </div>
     <div class="btn_jn font_b"><a href="#">JOIN</a></div>
 </div>
 </body>

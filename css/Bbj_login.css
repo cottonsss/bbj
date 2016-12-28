@@ -113,7 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 /*----------------------------------------------------- 회원가입페이지 -----------------------------------------------------*/
 /* layout */
-#wrap_join{position:relative; width:100%; height:100%; text-align:center;}
+#wrap_join{position:relative; text-align:center;}
 #wrap_join .tab_jn{position:relative; width:86%; height:auto; top:54px; margin:0 auto; overflow:auto;}
 #wrap_join .bbj_logo{position:relative; top:36px;}
 #wrap_join .contents_jn{position:relative; width:86%; height:auto; top:60px; margin:0 auto;}
@@ -127,6 +127,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .tab_jn .tab_a:active{color:#fff; background:#0ca2ed; border:1px solid #0ca2ed; border-radius:0 17.5px 17.5px 0; box-sizing:border-box;}
 .tab_jn .tab_a_active{color:#fff; background:#0ca2ed; border:1px solid #0ca2ed; border-radius:0 17.5px 17.5px 0; box-sizing:border-box;}
 /* tab */
+
+.ui-input-text{width:51%; display:inline-block;} /*제이쿼리모바일로 추가생성되는 div*/
 
 /* 성별선택 */
 .input_info .slct_sex{float:right; width:53%; padding:10px 0;}
@@ -153,7 +155,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .num_test{float:right; width:90px; padding:10px 0; text-align:center;}
 .num_test a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
-.form_2{position:relative; padding:0 7%; height:auto; top:54px; background:#f6f7fa; border-top:1px solid #d8deea; border-bottom:1px solid #d8deea; box-sizing:border-box; text-align:left; overflow:auto;}
+.form_2{position:relative; padding:0 7%; height:auto; top:54px; background:#f6f7fa; border-top:1px solid #d8deea; border-bottom:1px solid #d8deea; box-sizing:border-box; text-align:left;}
+
 .form_2 input{width:52%; margin:12px 0 10px 0; padding:6px 0 7px 12px; border:1px solid #d8deea; box-sizing:border-box; font-size:15px; line-height:17px; color:#5f676b; outline:none; letter-spacing:-0.5px;}
 .form_2 .input_num{float:right; width:43%;}
 .form_2 .input_num .num_ok{float:left; width:56px; padding:12px 0; text-align:center;}
@@ -161,14 +164,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .form_2 .input_num .num_re{float:right; width:56px; padding:12px 0; text-align:center;}
 .form_2 .input_num .num_re a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
+/*
 .box_agree{position:fixed; bottom:76px; width:100%; height:auto; margin:0 auto;}
 .box_agree .chk{display:inline-block; position:absolute; top:0; left:0; height:100%; opacity:0; cursor:pointer;}
 .box_agree label {display:inline-block; padding:2px 0 2px 30px; vertical-align:middle;}
 .box_agree label u { font-size:14px;}
 .box_agree .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
 .box_agree .btn_look:active{color:#0ca2ed;}
+*/
 
-.btn_jn{position:fixed; bottom:0; width:100%;}
+.chk_wrap{position:absolute; width:100%; height:auto; bottom:70px;}
+.chk_wrap .ui-checkbox{display:inline-block;}
+.chk_wrap .chk_input {margin:0 auto;}
+.chk_wrap .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
+.chk_wrap .btn_look:active{color:#0ca2ed;}
+
+.btn_jn{position:absolute; bottom:0; width:100%;}
 .btn_jn a{padding:17px 0; font-size:16px; color:#fff; line-height:16px ;background:#0ca2ed;}
 .btn_jn a:active{background:#0b91d4;}
 .btn_jn a_active{background:#0b91d4;}
@@ -200,13 +211,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 }
 
 @media(min-width:414px){
+#wrap_join .contents_jn{top:106px;}		
+	
 .input_info .slct_sex{width:42%;}
+
+.form_2{top:100px;}
 .form_2 .input_num{width:38%;}
 }
 
 @media(min-width:768px){
-#wrap_join .bbj_logo{top:90px;}
-#wrap_join .contents_jn{width:550px; top:184px;}	
+#wrap_join .bbj_logo{top:110px;}
+#wrap_join .contents_jn{width:550px; top:200px;}	
 
 .form_1{margin-bottom:10px;}	
 .form_1 .form_tit2{float:left; width:95px; padding:18px 0 18px 1px; font-size:14px; letter-spacing:-0.5px; color:#8d96a7;} /* label */
@@ -216,7 +231,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 .input_info .slct_sex{width:25%;}
 
-.form_2{padding:0; top:173px; margin:0 auto; width:550px;}
+.form_2{padding:0; top:190px; margin:0 auto; width:550px;}
 .form_2 input{margin:12px 0 10px 96px;}
 .form_2 .input_num{width:24%; margin-right:10px;}
 }
@@ -228,10 +243,10 @@ input:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-
 ::-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
 :-ms-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
 
-input.input_100:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:0;}
-::-webkit-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:0;}
-::-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:0;}
-:-ms-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:0;}
+input.input_100:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
+::-webkit-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
+::-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
+:-ms-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
 
 @media(min-width:360px){
 input:-moz-placeholder {font-size:14px; line-height:15px;}
