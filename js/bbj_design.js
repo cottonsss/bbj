@@ -112,13 +112,17 @@ $(document).ready(function(){
 	$(".form_1 input").focusin(function(){
 		var this_form = $(this).closest(".form_1");
 		var this_line = $(this_form).find(".line");
+		var this_txt_erase = $(this_form).find(".txt_erase");
 		$(this_line).addClass("line_on");
+		$(this_txt_erase).addClass("txt_erase_on");
 	});
 	$(".form_1 input").focusout(function(){
 		var this_form = $(this).closest(".form_1");
 		var this_line = $(this_form).find(".line");
+		var this_txt_erase = $(this_form).find(".txt_erase");
 		$(this_line).removeClass("line_on");
+		$(this_txt_erase).removeClass("txt_erase_on");
 	});
-
+	
 
 });
