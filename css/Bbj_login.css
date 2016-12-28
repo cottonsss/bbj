@@ -279,7 +279,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 @media(min-width:375px){
 .find_form{padding-top:26px;}
-.find_form p.find_txt{margin-bottom:10px;}	
+.find_form_pd{padding-top:12px;}
 .find_form .find_btn{margin:18px auto 22px auto;}
 }
 
