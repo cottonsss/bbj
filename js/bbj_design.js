@@ -107,4 +107,18 @@ $(document).ready(function(){
 	$(".btn_write a").mouseup(function(){
 		$($(this).find(".ripple")).removeClass("ripple_active");
 	});
+	
+	/* 로그인페이지 라인 컬러 설정 */
+	$(".form_1 input").focusin(function(){
+		var this_form = $(this).closest(".form_1");
+		var this_line = $(this_form).find(".line");
+		$(this_line).addClass("line_on");
+	});
+	$(".form_1 input").focusout(function(){
+		var this_form = $(this).closest(".form_1");
+		var this_line = $(this_form).find(".line");
+		$(this_line).removeClass("line_on");
+	});
+
+
 });

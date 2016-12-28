@@ -16,22 +16,23 @@
 /* header img */
 
 /* form */
-.form_1{position:relative; width:100%; height:auto; margin-bottom:6px; box-sizing:border-box; text-align:left;}
-.form_1 .line{width:100%; height:1px; background:#d8deea;} 
-.form_1 .input_info .line{position:absolute; left:0; width:100%; height:1px; background:#d8deea;} 
-.form_1 .input_info .line_error{position:absolute; left:0; width:100%; height:1px; background:#ff7373;}
-.form_1 .form_tit{padding:16.5px 14px 16.5px 10px; font-size:14px; color:#cad0dc;} /* label */
+.form_1{position:relative; width:100%; height:auto; margin-bottom:6px; border-bottom:1px solid #d8deea; text-align:left;}
+.form_1 .form_tit{position:absolute; padding:16.5px 14px 16.5px 10px; font-size:14px; color:#cad0dc;} /* label */
 .form_1 .form_tit2{float:left; width:86px; padding:18px 0 18px 1px; font-size:14px; letter-spacing:-0.5px; color:#8d96a7;} /* label */
-.form_1 .form_tit2 .label_error{color:#ff7373;}
+.form_1 .line{position:absolute; left:0; bottom:-1px; width:100%; height:1px; background:#0ca2ed; opacity:0; transition:all 0.5s ease-in-out;} /* 기본라인설정 */
+.form_1 .line_on{opacity:1} /* mouseover 상황 라인설정 */
+
+.form_1 .line_error{position:absolute; left:0; width:100%; height:1px; background:#ff7373;} /* error 상황 라인설정 */
+.form_1 .form_tit2 .label_error{color:#ff7373;} /* error 상황 텍스트설정 */
 
 .form_1 .input_info{width:calc(100% - 86px); margin-left:87px;}
 .form_1 input{padding:16px 0 17px 0; font-size:15px; line-height:17px; color:#5f676b; border:none; outline:none; letter-spacing:-0.5px;}
-.form_1 input.input_id{width:calc(90% - 50px);}
-.form_1 input.input_pw{width:calc(90% - 116px); letter-spacing:2px;}
+.form_1 input.input_id{width:calc(90% - 50px); margin-left:39px;}
+.form_1 input.input_pw{width:calc(90% - 116px); margin-left:103px; letter-spacing:2px;}
 .form_1 input.input_100{width:100%; letter-spacing:2px;}
 .form_1 input.input_42{width:42%;}
 .form_1 input.input_60{width:60%;}
-.form_1 input.input_52{width:52%;}
+.form_1 input.input_50{width:50%;}
 .form_1 input:focus ~ .line{background-color:#0ca2ed;
 -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 
@@ -128,10 +129,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .tab_jn .tab_a_active{color:#fff; background:#0ca2ed; border:1px solid #0ca2ed; border-radius:0 17.5px 17.5px 0; box-sizing:border-box;}
 /* tab */
 
-.ui-input-text{width:51%; display:inline-block;} /*제이쿼리모바일로 추가생성되는 div*/
+.ui-input-text{width:100%; display:inline-block;} /* 제이쿼리모바일로 추가생성되는 div */
 
 /* 성별선택 */
-.input_info .slct_sex{float:right; width:53%; padding:10px 0;}
+.input_info .slct_sex{position:absolute; top:0; right:0; width:37%; padding:10px 0;}
 .input_info .slct_sex .sex_male{float:left; text-align:center;}
 .input_info .slct_sex .sex_male a{width:50px; padding:8.5px 0; font-size:13px; color:#fff; line-height:13px; letter-spacing:1px; border-radius:15px; background:#5188ff;}
 /*.input_info .slct_sex .sex_male a:active{color:#fff; background:#5188ff;}
@@ -149,16 +150,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .btn_grd_white:active {position:relative; top:1px;}
 .btn_grd_white_active {position:relative; top:1px;}
 
-.id_test{float:right; width:72px; padding:10px 0; text-align:center;}
+.id_test{position:absolute; top:0; right:0; width:72px; padding:10px 0; text-align:center;}
 .id_test a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
-.num_test{float:right; width:90px; padding:10px 0; text-align:center;}
+.num_test{position:absolute; top:0; right:0; width:90px; padding:10px 0; text-align:center;}
 .num_test a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
-.form_2{position:relative; padding:0 7%; height:auto; top:54px; background:#f6f7fa; border-top:1px solid #d8deea; border-bottom:1px solid #d8deea; box-sizing:border-box; text-align:left;}
+.form_2{position:relative; padding:0 7%; height:auto; top:53px; background:#f6f7fa; border-top:1px solid #d8deea; border-bottom:1px solid #d8deea; box-sizing:border-box; text-align:left;}
 
 .form_2 input{width:52%; margin:12px 0 10px 0; padding:6px 0 7px 12px; border:1px solid #d8deea; box-sizing:border-box; font-size:15px; line-height:17px; color:#5f676b; outline:none; letter-spacing:-0.5px;}
-.form_2 .input_num{float:right; width:43%;}
+.form_2 .input_num{position:absolute; top:0; right:7%; width:37%;}
 .form_2 .input_num .num_ok{float:left; width:56px; padding:12px 0; text-align:center;}
 .form_2 .input_num .num_ok a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 .form_2 .input_num .num_re{float:right; width:56px; padding:12px 0; text-align:center;}
@@ -185,10 +186,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .btn_jn a_active{background:#0b91d4;}
 
 @media(min-width:360px){
-#wrap_join .bbj_logo{position:relative; top:56px;}
-#wrap_join .contents_jn{position:relative; width:86%; height:auto; top:88px; margin:0 auto;}	
+#wrap_join .bbj_logo{position:relative; top:50px;}
+#wrap_join .contents_jn{position:relative; width:86%; height:auto; top:80px; margin:0 auto;}	
 	
-.input_info .slct_sex{width:49%;}
+.input_info .slct_sex{width:36%;}
 .input_info .slct_sex .sex_male a{width:54px;}
 .input_info .slct_sex .sex_female a{width:54px;}
 
@@ -198,8 +199,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .num_test{float:right; width:100px; padding:10px 0; text-align:center;}
 .num_test a{padding:7px 0; font-size:14px; line-height:14px;}
 
-.form_2{top:82px;}
-.form_2 .input_num{width:42%;}
+.form_2{top:74px;}
+.form_2 .input_num{width:37%;}
 .form_2 .input_num .num_ok{width:62px;}
 .form_2 .input_num .num_re{width:62px;}
 
@@ -207,16 +208,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 }
 
 @media(min-width:375px){
-.input_info .slct_sex{width:47%;}
+.input_info .slct_sex{width:35%;}
+.form_2 .input_num{width:35%;}
 }
 
 @media(min-width:414px){
 #wrap_join .contents_jn{top:106px;}		
 	
-.input_info .slct_sex{width:42%;}
+.input_info .slct_sex{width:34%;}
 
 .form_2{top:100px;}
-.form_2 .input_num{width:38%;}
+.form_2 .input_num{width:34%;}
 }
 
 @media(min-width:768px){
@@ -233,17 +235,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 .form_2{padding:0; top:190px; margin:0 auto; width:550px;}
 .form_2 input{margin:12px 0 10px 96px;}
-.form_2 .input_num{width:24%; margin-right:10px;}
+.form_2 .input_num{width:24%; margin-right:-30px;}
 }
 /*----------------------------------------------------- 회원가입페이지 -----------------------------------------------------*/
 
-
-input:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
-::-webkit-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
-::-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
-:-ms-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px;}
-
-input.input_100:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
+input:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
 ::-webkit-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
 ::-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
 :-ms-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
