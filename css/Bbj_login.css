@@ -165,15 +165,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .form_2 .input_num .num_re{float:right; width:56px; padding:12px 0; text-align:center;}
 .form_2 .input_num .num_re a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
-/*
-.box_agree{position:fixed; bottom:76px; width:100%; height:auto; margin:0 auto;}
-.box_agree .chk{display:inline-block; position:absolute; top:0; left:0; height:100%; opacity:0; cursor:pointer;}
-.box_agree label {display:inline-block; padding:2px 0 2px 30px; vertical-align:middle;}
-.box_agree label u { font-size:14px;}
-.box_agree .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
-.box_agree .btn_look:active{color:#0ca2ed;}
-*/
-
 .chk_wrap{position:absolute; width:100%; height:auto; bottom:70px;}
 .chk_wrap .ui-checkbox{display:inline-block;}
 .chk_wrap .chk_input {margin:0 auto;}
@@ -238,6 +229,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .form_2 .input_num{width:24%; margin-right:-30px;}
 }
 /*----------------------------------------------------- 회원가입페이지 -----------------------------------------------------*/
+
+/*----------------------------------------------------- 가입완료페이지 -----------------------------------------------------*/
+#wrap_login .content_jn_c{position:relative; width:82%; height:auto; margin:90px auto 0 auto;}
+
+.content_jn_c .user_info{font-size:24px; color:#5f676b;}
+.content_jn_c .user_info span.user_name{margin-right:5px; font-size:30px; color:#5f676b;}
+.content_jn_c .jn_c_txt{margin:10px 0 26px 0; font-size:20px; color:#5f676b;}
+.content_jn_c .ico_go{position:relative; width:260px; height:auto; margin:0 auto;}
+.content_jn_c .ico_go a{background:url('http://image.club5678.com/imgs/bbjang/img_login/ico_go.png') 90% 50% no-repeat; background-size:17px 14px; border:1px solid #0ca2ed; border-radius:21px; font-size:18px; color:#0ca2ed; line-height:18px; padding:12px 0;}
+.content_jn_c .ico_go a:active{position:relative; top:1px;}
+.content_jn_c .ico_go a_active{position:relative; top:1px;}
+.content_jn_c .go_write{margin-top:16px;}
+/*----------------------------------------------------- 가입완료페이지 -----------------------------------------------------*/
 
 input:-moz-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
 ::-webkit-input-placeholder {color:#c9c9c9; font-weight:normal; font-size:12px; line-height:15px; letter-spacing:-0.5px;}
