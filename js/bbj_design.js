@@ -108,6 +108,7 @@ $(document).ready(function(){
 		$($(this).find(".ripple")).removeClass("ripple_active");
 	});
 	
+
 	/* 로그인페이지 라인 컬러 설정 */
 	$(".form_1 input").focusin(function(){
 		var this_form = $(this).closest(".form_1");
@@ -123,6 +124,6 @@ $(document).ready(function(){
 		$(this_line).removeClass("line_on");
 		$(this_txt_erase).removeClass("txt_erase_on");
 	});
-	
+
 
 });

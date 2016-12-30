@@ -4,10 +4,12 @@
 /* back btn(login용)*/
 .back_lg{position:absolute; display:block; width:40px; height:40px; top:5px; left:5px; padding:0; border:0; -webkit-appearance:none; text-indent:-9999px;}
 .back_lg a{display:block; width:40px; height:40px;}
-.back_lg a.back_1{background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px;}
-.back_lg a.back_2{background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg2.png') center center no-repeat; background-size:17px 14px;}
-.back_lg a:active{background:rgba(0,0,0,0.05);}
-.back_lg a_active{background:rgba(0,0,0,0.05);}
+.back_lg a.back_1{background:url('http://image.club5678.com/imgs/bbjang/img01/btn_back.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_1:active{background:rgba(0,0,0,0.05) url('http://image.club5678.com/imgs/bbjang/img01/btn_back.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_1_active{background:rgba(0,0,0,0.05)  url('http://image.club5678.com/imgs/bbjang/img01/btn_back.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_2{background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_2:active{background:rgba(0,0,0,0.05) url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px;}
+.back_lg a.back_2_active{background:rgba(0,0,0,0.05)  url('http://image.club5678.com/imgs/bbjang/img_login/btn_back_lg.png') center center no-repeat; background-size:17px 14px;}
 /* back btn(login용)*/
 
 /* header img */
@@ -159,7 +161,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .num_test a{padding:7.5px 0; font-size:13px; color:#6c788f; line-height:13px;}
 
 .form_2{position:relative; padding:0 7%; height:auto; top:53px; background:#f6f7fa; border-top:1px solid #d8deea; border-bottom:1px solid #d8deea; box-sizing:border-box; text-align:left;}
-
 .form_2 input{width:52%; margin:12px 0 10px 0; padding:6px 0 7px 12px; border:1px solid #d8deea; box-sizing:border-box; font-size:15px; line-height:17px; color:#5f676b; outline:none; letter-spacing:-0.5px;}
 .form_2 .input_num{position:absolute; top:0; right:7%; width:37%;}
 .form_2 .input_num .num_ok{float:left; width:56px; padding:12px 0; text-align:center;}
@@ -180,23 +181,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 @media(min-width:360px){
 #wrap_join .bbj_logo{position:relative; top:50px;}
-#wrap_join .contents_jn{position:relative; width:86%; height:auto; top:80px; margin:0 auto;}	
-	
+#wrap_join .contents_jn{position:relative; width:86%; height:auto; top:80px; margin:0 auto;}		
 .input_info .slct_sex{width:36%;}
 .input_info .slct_sex .sex_male a{width:54px;}
 .input_info .slct_sex .sex_female a{width:54px;}
-
 .id_test{width:80px;}
 .id_test a{padding:7px 0; font-size:14px; line-height:14px;}
-
 .num_test{float:right; width:100px; padding:10px 0; text-align:center;}
 .num_test a{padding:7px 0; font-size:14px; line-height:14px;}
-
 .form_2{top:73px;}
 .form_2 .input_num{width:37%;}
 .form_2 .input_num .num_ok{width:62px;}
 .form_2 .input_num .num_re{width:62px;}
-
 .box_agree{bottom:80px;}
 }
 
@@ -207,24 +203,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 
 @media(min-width:414px){
 #wrap_join .contents_jn{top:106px;}		
-	
 .input_info .slct_sex{width:34%;}
-
 .form_2{top:100px;}
 .form_2 .input_num{width:34%;}
 }
 
 @media(min-width:768px){
 #wrap_join .contents_jn{width:550px; top:200px;}	
-
 .form_1{margin-bottom:10px;}	
 .form_1 .form_tit2{float:left; width:95px; padding:18px 0 18px 1px; font-size:14px; letter-spacing:-0.5px; color:#8d96a7;} /* label */
-
 .form_1 .input_info{width:calc(100% - 95px); margin-left:96px;}
 .form_1 input{padding:16px 0 17px 0; font-size:15px; line-height:17px; color:#5f676b; border:none; outline:none;}
-
 .input_info .slct_sex{width:25%;}
-
 .form_2{padding:0; top:190px; margin:0 auto; width:550px;}
 .form_2 input{margin:12px 0 10px 96px;}
 .form_2 .input_num{width:24%; margin-right:-30px;}
@@ -272,7 +262,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 @media(min-width:360px){
 .find_form h2{margin-bottom:10px;}		
 .find_form p.find_txt{font-size:14px; margin-bottom:6px;}
-
 .find_form .find_btn{margin:18px auto 22px auto;}
 .find_form .c_center{margin-top:24px;}
 }
