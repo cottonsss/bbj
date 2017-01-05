@@ -21,7 +21,7 @@
 .form_1{position:relative; width:100%; height:auto; margin-bottom:6px; border-bottom:1px solid #d8deea; text-align:left;}
 .form_1 .form_tit{position:absolute; padding:16.5px 14px 16.5px 10px; font-size:14px; color:#cad0dc;} /* label */
 .form_1 .form_tit2{float:left; width:86px; padding:18px 0 18px 1px; font-size:14px; letter-spacing:-0.5px; color:#8d96a7;} /* label */
-.form_1 .line{position:absolute; left:0; bottom:-1px; width:100%; height:1px; background:#0ca2ed; opacity:0; transition:all 0.5s ease-in-out;} /* 기본라인설정 */
+.form_1 .line{position:absolute; left:0; bottom:-1px; width:100%; height:1px; background:#0ca2ed; opacity:0; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;} /* 기본라인설정 */
 .form_1 .line_on{opacity:1} /* mouseover 상황 라인설정 */
 
 .form_1 .line_error{position:absolute; left:0; width:100%; height:1px; background:#ff7373;} /* error 상황 라인설정 */
@@ -36,8 +36,8 @@
 .form_1 input.input_42{width:42%;}
 .form_1 input.input_60{width:60%;}
 .form_1 input.input_50{width:50%;}
-.form_1 input:focus ~ .line{background-color:#0ca2ed;
--webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.form_1 input:focus ~ .line{opacity:1;}
+.form_1 input:focus ~ .txt_erase{opacity:1;}
 
 .form_1 .txt_erase{position:absolute; width:40px; height:40px; top:4px; right:0; background:url('http://image.club5678.com/imgs/bbjang/img_login/btn_erase.png') center center no-repeat; background-size:8px 8px; text-indent:-9999px; opacity:0; transition:all 0.5s ease-in-out;}
 .form_1 .txt_erase_on{opacity:1;}
@@ -50,13 +50,13 @@
 /*----------------------------------------------------- 로그인페이지 -----------------------------------------------------*/
 /* layout */
 #wrap_login{position:relative; width:100%; text-align:center;}
-#wrap_login .header_lg{postion:relative; width:100%; height:214px; 
+.header_lg{postion:relative; width:100%; height:214px; 
 background: rgb(1,168,213); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(1,168,213,1) 38%, rgba(2,148,201,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(1,168,213,1) 38%,rgba(2,148,201,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(1,168,213,1) 38%,rgba(2,148,201,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', endColorstr='#0294c9',GradientType=0 ); /* IE6-9 */}
-#wrap_login .content_lg{position:relative; width:82%; height:auto; margin:20px auto 0 auto;}
+.content_lg{position:relative; width:82%; height:auto; margin:20px auto 0 auto;}
 /* layout */
 
 /* login form */
@@ -82,21 +82,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 /* login form */
 
 @media(min-width:360px){
-#wrap_login .header_lg{height:220px;} 
+.header_lg{height:220px;} 
 .header_lg img.logo_lg{top:74px;}
 .header_lg img.img_lg{top:162px;}
 .content_lg .form_1{margin-bottom:8px;}		
-#wrap_login .content_lg{margin:34px auto 0 auto;}
+.content_lg{margin:34px auto 0 auto;}
 .content_lg .lg_social{width:94px; margin:50px auto  0 auto;}
 .content_lg .lg_btn{margin:28px auto 30px auto;}
 }
 
 @media(min-width:414px){
-#wrap_login .header_lg{height:270px;} 
+.header_lg{height:270px;} 
 .header_lg img.logo_lg{top:104px;}
 .header_lg img.img_lg{top:212px;}
 .content_lg .form_1{margin-bottom:12px;}		
-#wrap_login .content_lg{margin:50px auto 0 auto;}
+.content_lg{margin:50px auto 0 auto;}
 .content_lg .lg_social{width:94px; margin:60px auto 0 auto;}
 .content_lg .lg_btn{width:190px; margin:36px auto 36px auto;}
 .content_lg .lg_btn a{padding:16px 0; border-radius:24.5px;}
@@ -104,11 +104,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 }
 
 @media(min-width:768px){
-#wrap_login .header_lg{height:360px;} 
+.header_lg{height:360px;} 
 .header_lg img.logo_lg{top:146px;}
 .header_lg img.img_lg{top:302px;}
 .content_lg .form_1{width:460px; margin:0 auto 20px auto;}		
-#wrap_login .content_lg{margin:80px auto 0 auto;}
+.content_lg{margin:80px auto 0 auto;}
 .content_lg .lg_social{width:110px; margin:110px auto 0 auto;}
 .content_lg .lg_btn{width:250px; margin:46px auto 50px auto;}
 .content_lg .lg_btn a{padding:20px 0; border-radius:28.5px;}
@@ -171,7 +171,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 .chk_wrap{position:absolute; width:100%; height:auto; bottom:70px;}
 .chk_wrap .ui-checkbox{display:inline-block;}
 .chk_wrap .chk_input {margin:0 auto;}
-.chk_wrap .btn_look{display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
+.chk_wrap .btn_look{position:relative; z-index:10; display:inline-block; padding:0 5px; font-size:14px; font-weight:700;}
 .chk_wrap .btn_look:active{color:#0ca2ed;}
 
 .btn_jn{position:absolute; bottom:0; width:100%;}
@@ -246,6 +246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8d5', end
 /*----------------------------------------------------- 가입완료페이지 -----------------------------------------------------*/
 
 /*----------------------------------------------------- 아이디/비밀번호찾기 -----------------------------------------------------*/
+#wrap_find_if{position:relative; width:100%; text-align:center;}
 .find_form{position:relative; width:82%; height:auto; top:30px; padding-top:20px; margin:0 auto; text-align:left;}
 .find_form_pd{padding-top:10px;}
 .find_form h2{font-size:16px; color:#0ca2ed; margin-bottom:6px;}
